@@ -1,0 +1,18 @@
+<div class="wrapper">
+  <div class="container-head">
+    <h3><%= @article.title %></h3>
+    <%= link_to "", edit_article_path, class: "fas fa-pencil-alt" %>
+    <%= link_to "", article_path(@article),
+      method: :delete,
+      data: {confirm: "Are you sure?"},
+      class: "fas fa-trash-alt" %>
+
+  </div>
+
+  <div class="container">
+    <p><%= @article.content %></p>
+  </div>
+
+
+</div>
+
